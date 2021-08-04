@@ -24,7 +24,7 @@ sql_db.run(
   }
 );
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 server.listen(PORT, () => {
   console.log(`Server started on ${PORT}`.yellow.bold);
